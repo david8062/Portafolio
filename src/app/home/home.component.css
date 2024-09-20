@@ -1,0 +1,112 @@
+.principal{
+    height: 100vh; 
+    width: 100vw; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.section-primary{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    background: linear-gradient(360deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.progress-bar {
+    height: 65px;
+    width: 800px;
+    background-color: red;
+    animation: fill-bar 10s forwards; 
+}
+
+.name{
+    align-self: flex-start;
+    margin: 200px 0 45px 150px;
+    letter-spacing: 8px;
+    text-shadow: var(--text-color-special);
+
+}
+
+.sub-tittle{
+    align-self: flex-start;
+    margin: 45px 0px 45px 150px;
+    letter-spacing: 7px;
+    text-shadow: var(--text-color-special);
+}
+
+
+.button-primary{
+    margin-top: 250px;
+    animation: neon 5s infinite;
+}
+.section-second{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.tittle{
+    align-self: center;
+    margin: 200px 0 0 0;
+    letter-spacing: 8px;
+    text-shadow: var(--text-color-special);
+}
+.about-me{
+    margin-top: 100px;
+    padding: 0 50px 0 50px;
+    align-self: center;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.list-social {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.list-social li {
+    margin: 0 15px; 
+    font-size: 80px; 
+    display: flex; 
+    align-items: center; 
+    
+}
+i:hover {
+    color: #00a7f5ce;
+    transform: scale(1.2); 
+    transition: transform 0.3s, background 0.3s;
+    
+}
+
+
+@keyframes fill-bar {
+    0% {
+        width: 0; 
+    }
+    100% {
+        width: 100%; 
+    }
+}
+
+@keyframes neon {
+    0%, 100% {
+      box-shadow: 0 0 5px #2f00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 
+                  0 0 40px #00ffff, 0 0 80px #00ffff, 0 0 90px #00ffff, 
+                  0 0 100px #00ffff;
+    }
+    50% {
+      box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 
+                  0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff, 
+                  0 0 100px #ff00ff;
+    }
+}

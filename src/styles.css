@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #06144E;
+    --secondary-color: #391DDA;
+    --third-color: #5B32D9;
+    --text-broder-color: #FFEA00;
+    --button-color: #2A0FC7;
+    --icon-color: #F5F5F5;
+    --text-color-special: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    --text-color: #f5ebeb;
+    --text-color-dark: #000000;
+    --text-color-accent: #58e93c;
+    --color-box1: #e21393;
+    --font-tittle: 'ZenDots';
+    --font-text-generic: space-mono;
+    
+ 
+}
+@font-face {
+    font-family: 'ZenDots';
+    src: url('./assets/fonts/ZenDots-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+  
+h1 {
+    font-size: 56px;
+    font-family: var(--font-tittle);
+    color: var(--text-color);
+    font-weight: bold;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 46px;
+    font-family: var(--font-tittle);
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 34px;
+    font-family: var(--font-tittle);
+    color: var(--text-color);
+}
+
+h4 {
+    font-size: 26px;
+    font-family: var(--font-tittle);
+    color: var(--text-color);
+}
+
+p {
+    font-size: 16px;    
+    color: var(--text-color);
+    font-family: var(--font-text-generic);    
+}
+
+button {
+    background: var(--button-color);
+    width: 370px;
+    height: 90px;
+    border-radius: 50px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: var(--font-tittle);
+    border: none;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+i {
+    color: var(--icon-color);
+}
