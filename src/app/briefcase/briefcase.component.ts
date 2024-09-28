@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-
+import { LateralNavComponent } from '../shared/lateralNav/lateral-nav.component';
 @Component({
   selector: 'app-briefcase',
   standalone: true,
-  imports: [],
+  imports: [LateralNavComponent],
   templateUrl: './briefcase.component.html',
   styleUrl: './briefcase.component.css'
 })

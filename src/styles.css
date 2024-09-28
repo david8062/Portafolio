@@ -6,10 +6,15 @@
     --button-color: #2A0FC7;
     --icon-color: #F5F5F5;
     --text-color-special: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    --color-nav-bar: #081d74;
     --text-color: #f5ebeb;
+    --text-color-secondary: #4EA1FF;
     --text-color-dark: #000000;
     --text-color-accent: #58e93c;
-    --color-box1: #e21393;
+    --color-box1: #621339;
+    --color-box2: #F2298A;
+    --color-box3: #316BFF;
+    --color-box4: #F2298A;
     --font-tittle: 'ZenDots';
     --font-text-generic: space-mono;
     
@@ -78,4 +83,20 @@ button {
 
 i {
     color: var(--icon-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+@keyframes fill-bar {
+    0% {
+        width: 0; 
+    }
+    100% {
+        width: 100%; 
+    }
 }
